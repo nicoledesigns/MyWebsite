@@ -86,7 +86,7 @@ with st.container():
         st.image(img2)
     with text_column:
     	
-        st.markdown("[Nicole's Website](https://66cbf05e4600d7bd8dd95160--ephemeral-pothos-cbb6ca.netlify.app/)")
+        st.markdown("[Nicole's Website](https://ephemeral-pothos-cbb6ca.netlify.app)")
         st.subheader("Nicole's Website")
         st.write(
             """
