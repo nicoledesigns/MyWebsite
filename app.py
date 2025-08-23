@@ -18,6 +18,7 @@ lottie_coding = load_lottieurl("https://lottie.host/6e3e4dd8-7ca5-4ed6-9f64-ed7f
 img_contact_form = Image.open("images/pet.png")
 img2 = Image.open("images/project.png")
 img3 = Image.open("images/chat.png")
+img4 = Image.open("images/bibleapp.png") 
 
 # Apply local CSS
 def local_css(file_name):
@@ -31,35 +32,38 @@ local_css("style/style.css")
 # Create the layout
 with st.container():
     st.write("---")
-    left_column, right_column = st.columns([2, 1])  # Adjust column widths as needed
+    left_column, right_column = st.columns([2, 1])  
 
 with left_column:
-    st.subheader("Welcome to My Website :wave:")
+    st.suber("Welcome to My Portfolio :wave:")
     st.title("Nicole Antoun")
     st.write(
-        "As a Software Engineering Co-op Student at Concordia University, my goal is to use the most of what I learn from school, work, daily life and surrounding to accomplish the needs of your company as well as producing the best and most successful resolution. With me in your team, you can expect to see me learn fast and make your company grow."
+        """
+        I am a Software Engineering Student at Concordia University with strong skills in problem-solving, design, and full-stack development.  
+        
+        My goal is to transform technical knowledge into impactful, user-friendly solutions that help businesses grow.  
+        
+        I am highly motivated, quick to learn new technologies, and thrive in collaborative environments.  
+        """
     )
-    st.write(" ")
-    st.write(" ")
-    st.write(" ")
-    st.write(" ")
-    st.write("You can view my Resume here: [Resume](https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:bb8ccb1b-1a46-4ddd-87f8-4f832bbf36ea)") 
+    st.write("📄 [View My Resume](https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:bb8ccb1b-1a46-4ddd-87f8-4f832bbf36ea)") 
           
     with right_column:
         if lottie_welcome:
-            st_lottie(lottie_welcome, height=400, key="welcome", width=400)  # Adjust height and width as needed
+            st_lottie(lottie_welcome, height=400, key="welcome", width=400)  
 
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header("Some of my skills:")
+        st.header("Core Skills")
         st.write(
             """
-            	&#10061; creativity and design\n  
-            	&#10061; critical thinking\n
-            	&#10061; problem assessment and analysis\n 
-            	&#10061; adaptability\n
+            - Creativity & Design Thinking  
+            - Critical Analysis & Problem-Solving  
+            - Full-Stack Web Development  
+            - Adaptability & Continuous Learning  
+            - Teamwork & Project Management  
             """
         )
        
@@ -69,54 +73,81 @@ with st.container():
 
 with st.container():
     st.write("---")
-    st.header("My Projects")
+    st.header("Highlighted Projects")
     st.write("##")
+
+    # Project 1
     image_column, text_column = st.columns((1, 2))
     with image_column:
-        st.image(img_contact_form)
-        
+        st.image(img_contact_form, use_column_width=True)
     with text_column:
         st.subheader("Pet Website")
         st.write(
             """
-            In this project, I used HTML, CSS, and JavaScript to build and design my website pages. It includes 7 different pages. A high mark of 97% was given for it.   
-            Take a look at my website here:
+            A 7-page responsive website built with **HTML, CSS, and JavaScript**.  
+            Designed for usability and aesthetics, earning a **97% grade**.  
             """
         )
-    with image_column:
-        st.image(img2)
-    with text_column:
-    	
-        st.markdown("[Pet Website](https://ephemeral-pothos-cbb6ca.netlify.app)")
-        st.subheader("Nicole's Website")
-        st.write(
-            """
-            In this project, I used Python and CSS to build and design my website, incorporating Lottie animations to enhance user experience. This highlights both my creativity and passion for web development.
-            
-            """
-        )
-    
-    with image_column:
-        st.image(img3)
-    with text_column:
-    	
+        st.markdown("[🌐 View Project](https://ephemeral-pothos-cbb6ca.netlify.app)")
+
+ 
+      # Project 2
+image_column, text_column = st.columns((1, 2))
+
+with image_column:
+    st.image(img4, use_column_width=True)
+
+with text_column:
+    st.subheader("Bible App")
+    st.write(
+        """
+        A Flutter app I built to make Bible reading and reflection more interactive.  
+
+        - Read or listen to Scripture, highlight verses, and take notes  
+        - Daily verses, prayer calendar, and verse search  
+        - Biblical AI chat powered by **gpt-4o-mini**  
+        - Built with **Flutter/Dart** and tested on iOS simulators via **Xcode**
+        """
+    )
   
-        st.subheader("ChatHaven")
-        st.write(
+    
+    # Project 3
+image_column, text_column = st.columns((1, 2))
+
+with image_column:
+    st.image(img3, use_column_width=True)
+with text_column:
+    st.subheader("ChatHaven (Team Project)")
+    st.write(
             """
-           My team and I developed a web app for team and personal communication, focusing on fixing issues like complexity, privacy, and usability. We built features such as group channels, private chats, media sharing, and privacy controls. We used Agile for development, and I gained experience in full-stack web development with React, Express, and SQLite, along with teamwork, problem-solving, and project management.
-            
+            A full-stack communication platform designed to improve **usability, privacy, and collaboration**.  
+
+            - Built with **React, Express.js, and SQLite**  
+            - Features include **group channels, private messaging, and media sharing**  
+            - Developed using **Agile methodology**, enhancing teamwork and project management skills  
             """
-        )
-        
-        
-        
+    )
+
+         
+           # Project 4
+image_column, text_column = st.columns((1, 2))
+    
+with image_column:
+    st.image(img2, use_column_width=True)
+with text_column:
+    st.subheader("Portfolio Website")
+    st.write(
+            """
+            Developed a personal portfolio using **Python (Streamlit) and CSS** with interactive **Lottie animations**.  
+            This site demonstrates my ability to combine design and technical skills to create engaging user experiences.  
+            """
+    )
         
 
 # Contact Me Section
 with st.container():
     st.write("---")
-    st.header("Get in touch with me!")
+    st.header("Get in Touch")
     st.write("##")
     
     contact_form ="""
@@ -133,4 +164,6 @@ with st.container():
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
         st.empty()
+
+
 
