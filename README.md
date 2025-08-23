@@ -1,2 +1,1 @@
-In this project, I used Python and CSS to build and design my website, incorporating Lottie animations to enhance user experience. 
-This personal project highlights both my creativity and passion for web development.
+In this project, I built and designed my website using Python and CSS, integrating Lottie animations to create a more engaging user experience. I developed the site in Ubuntu, leveraging the Linux environment for efficient workflow. This personal project demonstrates my creativity and passion for web development.
