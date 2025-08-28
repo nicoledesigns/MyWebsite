@@ -35,7 +35,7 @@ with st.container():
     left_column, right_column = st.columns([2, 1])  
 
 with left_column:
-    st.suber("Welcome to My Portfolio :wave:")
+    st.subheader("Welcome to My Portfolio :wave:")
     st.title("Nicole Antoun")
     st.write(
         """
