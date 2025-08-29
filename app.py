@@ -46,7 +46,8 @@ with left_column:
         I am highly motivated, quick to learn new technologies, and thrive in collaborative environments.  
         """
     )
-    st.write("📄 [View My Resume](https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:bb8ccb1b-1a46-4ddd-87f8-4f832bbf36ea)") 
+    st.write("📄 [View My Resume](https://drive.google.com/file/d/1Y3gMq7qrsl6bVe4vX1WobNJxoXh7o5Rr/view?usp=drive_link)") 
+    st.write("📄 [View My GitHub](https://ur0.jp/mLZCW )") 
           
     with right_column:
         if lottie_welcome:
