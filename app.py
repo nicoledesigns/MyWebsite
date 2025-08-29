@@ -79,7 +79,7 @@ with st.container():
     # Project 1
     image_column, text_column = st.columns((1, 2))
     with image_column:
-        st.image(img_contact_form, use_column_width=True)
+        st.image(img_contact_form, use_container_width=True)
     with text_column:
         st.subheader("Pet Website")
         st.write(
@@ -95,7 +95,7 @@ with st.container():
 image_column, text_column = st.columns((1, 2))
 
 with image_column:
-    st.image(img4, use_column_width=True)
+    st.image(img4, use_container_width=True)
 
 with text_column:
     st.subheader("Bible App")
@@ -115,7 +115,7 @@ with text_column:
 image_column, text_column = st.columns((1, 2))
 
 with image_column:
-    st.image(img3, use_column_width=True)
+    st.image(img3, use_container_width=True)
 with text_column:
     st.subheader("ChatHaven (Team Project)")
     st.write(
@@ -133,7 +133,7 @@ with text_column:
 image_column, text_column = st.columns((1, 2))
     
 with image_column:
-    st.image(img2, use_column_width=True)
+    st.image(img2, use_container_width=True)
 with text_column:
     st.subheader("Portfolio Website")
     st.write(
