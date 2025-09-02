@@ -110,6 +110,8 @@ with text_column:
         - Built with **Flutter/Dart** and tested on iOS simulators via **Xcode**
         """
     )
+    st.markdown("[🌐 View Project](https://nicolebibleapp.web.app/)")
+  
   
     
     # Project 3
