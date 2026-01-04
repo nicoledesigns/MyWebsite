@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+}
+
+.stContainer {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+}
+
+.carousel-slide {
+    animation: slide-in 0.45s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #4b6cb7;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.15);
+    color: #3a529b;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 120px;
+}
